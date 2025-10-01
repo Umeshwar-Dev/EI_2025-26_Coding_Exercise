@@ -77,7 +77,8 @@ The application runs entirely in a **terminal (CLI)** and focuses on:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Umeshwar-Dev/EI_2025-26_Coding_Exercise/Ex2/VirtualClassroomManager.git
+git clone https://github.com/Umeshwar-Dev/EI_2025-26_Coding_Exercise
+cd Ex2
 cd VirtualClassroomManager
 
 # Compile all Java sources
