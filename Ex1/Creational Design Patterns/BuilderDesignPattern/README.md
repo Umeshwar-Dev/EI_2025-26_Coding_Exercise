@@ -10,12 +10,11 @@ It builds customizable travel packages (Budget & Luxury) by separating the **con
 - [Overview](#overview)
 - [Features](#features)
 - [Design Pattern Used](#design-pattern-used)
-- [Class Diagram](#class-diagram)
 - [Prerequisites](#prerequisites)
-- [Installation & Execution](#installation--execution)
+- [Execution](#installation--execution)
 - [Code Structure](#code-structure)
 - [Sample Output](#sample-output)
-- [License](#license)
+
 
 ---
 
