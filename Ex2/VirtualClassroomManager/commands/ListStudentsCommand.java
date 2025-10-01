@@ -1,9 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * CONCRETE COMMAND: List Students
- */
+
 public class ListStudentsCommand implements Command {
     private final String[] args;
     
@@ -18,7 +16,7 @@ public class ListStudentsCommand implements Command {
         }
         
         String classroomName = String.join(" ", Arrays.copyOfRange(args, 1, args.length));
-        // COMMAND calls RECEIVER's method
+        
         Classroom classroom = receiver.getClassroom(classroomName);
         List<String> students = classroom.getStudents();
         

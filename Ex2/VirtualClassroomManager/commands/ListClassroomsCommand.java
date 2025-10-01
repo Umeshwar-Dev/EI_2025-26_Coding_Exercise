@@ -1,8 +1,6 @@
 import java.util.List;
 
-/**
- * CONCRETE COMMAND: List Classrooms
- */
+
 public class ListClassroomsCommand implements Command {
     private final String[] args;
     
@@ -12,7 +10,7 @@ public class ListClassroomsCommand implements Command {
     
     @Override
     public void execute(ClassroomSystem receiver) throws ClassroomException {
-        // COMMAND calls RECEIVER's method
+        
         List<Classroom> classrooms = receiver.getAllClassrooms();
         
         if (classrooms.isEmpty()) {

@@ -1,8 +1,5 @@
 import java.util.Arrays;
 
-/**
- * CONCRETE COMMAND: Submit Assignment
- */
 public class SubmitAssignmentCommand implements Command {
     private final String[] args;
     

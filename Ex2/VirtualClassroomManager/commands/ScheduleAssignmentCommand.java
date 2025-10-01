@@ -1,8 +1,5 @@
 import java.util.Arrays;
 
-/**
- * CONCRETE COMMAND: Schedule Assignment
- */
 public class ScheduleAssignmentCommand implements Command {
     private final String[] args;
     

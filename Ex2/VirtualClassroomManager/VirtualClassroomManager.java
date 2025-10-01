@@ -2,10 +2,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
- * Main class for Virtual Classroom Manager Application
- * Acts as CLIENT in Command Pattern - creates commands and passes them to invoker
- */
+
 public class VirtualClassroomManager {
     private static final Logger logger = Logger.getLogger(VirtualClassroomManager.class.getName());
     private final ClassroomSystem classroomSystem;  // RECEIVER
@@ -53,24 +50,22 @@ public class VirtualClassroomManager {
         cleanup();
     }
 
-    /**
-     * CLIENT responsibility: Create command and pass to INVOKER
-     */
+    
     private void processInput(String input) {
-        // declare tokens outside try so it's visible in catch
+     
         String[] tokens = input.split("\\s+");
 
         try {
-            // CLIENT creates the command
+           
             Command command = CommandFactory.createCommand(tokens[0], tokens);
-            // CLIENT passes command to INVOKER
+            
             invoker.executeCommand(command, classroomSystem);
 
         } catch (InvalidCommandException e) {
             System.err.println("Unknown command: " + tokens[0]);
             showHelp();
 
-        // either catch superclass only OR catch separately:
+        
         } catch (ValidationException e) {
             System.err.println("Error: " + e.getMessage());
         } catch (ClassroomException e) {

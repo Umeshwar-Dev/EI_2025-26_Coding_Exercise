@@ -2,10 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
-/**
- * creates command objects
- * Note: This does not follow Factory Pattern and Open/Closed Principle
- */
+
 public class CommandFactory {
     private static final Map<String, Function<String[], Command>> commandMap = new HashMap<>();
     

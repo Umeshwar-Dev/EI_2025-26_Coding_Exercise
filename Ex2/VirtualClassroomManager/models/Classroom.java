@@ -1,10 +1,7 @@
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Classroom domain model
- * Encapsulates classroom data and operations
- */
+
 public class Classroom {
     private final String name;
     private final Set<String> students;

@@ -1,8 +1,6 @@
 import java.util.Arrays;
 
-/**
- * CONCRETE COMMAND: Add Student
- */
+
 public class AddStudentCommand implements Command {
     private final String[] args;
     
@@ -18,7 +16,7 @@ public class AddStudentCommand implements Command {
         
         String studentId = args[1];
         String classroomName = String.join(" ", Arrays.copyOfRange(args, 2, args.length));
-        // COMMAND delegates to RECEIVER
+        
         receiver.addStudent(studentId, classroomName);
         System.out.println("Student " + studentId + " has been enrolled in " + classroomName + ".");
     }
