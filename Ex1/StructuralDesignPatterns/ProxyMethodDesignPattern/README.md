@@ -19,7 +19,7 @@ A simple Java project to illustrate the **Proxy Design Pattern** by simulating r
 
 ## Overview
 
-This project showcases the Proxy Design Pattern by wrapping a `RemoteFileProxy` around `RealRemoteFile` objects to add caching and optimize remote file requests. The client (user) interacts with files through the proxy, which hides the complexity of retrieving and caching remote files[files:21][files:23].
+This project showcases the Proxy Design Pattern by wrapping a `RemoteFileProxy` around `RealRemoteFile` objects to add caching and optimize remote file requests. The client (user) interacts with files through the proxy, which hides the complexity of retrieving and caching remote files.
 
 ---
 
@@ -53,10 +53,10 @@ This project showcases the Proxy Design Pattern by wrapping a `RemoteFileProxy` 
 
 | File/Class          | Description                                           |
 |---------------------|------------------------------------------------------|
-| RemoteFileSystem.java | Main client loop to interactively access files[files:22]. |
-| RemoteFileProxy.java  | Proxy class; caches files, delegates to real file[files:21]. |
-| RealRemoteFile.java   | Simulates retrieval and display of remote file[files:23]. |
-| RemoteFile.java       | Interface; unified file access contract[files:24]. |
+| RemoteFileSystem.java | Main client loop to interactively access files |       
+| RemoteFileProxy.java  | Proxy class; caches files, delegates to real file. |
+| RealRemoteFile.java   | Simulates retrieval and display of remote file. |
+| RemoteFile.java       | Interface; unified file access contract. |
 
 ---
 
