@@ -4,16 +4,19 @@ public class Client {
 
         // Password authentication
         context.setStrategy(new PasswordAuthentication());
-        System.out.println("Password Auth success? " + context.authenticateUser());
+        System.out.println("Password Auth success? ");
+        context.authenticateUser();
         System.out.println();
 
         // OAuth authentication
         context.setStrategy(new OAuthAuthentication());
-        System.out.println("OAuth Auth success? " + context.authenticateUser());
+        System.out.println("OAuth Auth success? ");
+        context.authenticateUser();
         System.out.println();
 
         // Biometric authentication
         context.setStrategy(new BiometricAuthentication());
-        System.out.println("Biometric Auth success? " + context.authenticateUser());
+        System.out.println("Biometric Auth success? ");
+        context.authenticateUser();
     }
 }
