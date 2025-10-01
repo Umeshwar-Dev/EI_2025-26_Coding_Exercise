@@ -11,7 +11,6 @@ A `BlogPublisher` notifies all registered `Followers` whenever a new blog post i
 - [Features](#features)
 - [Design Pattern Structure](#design-pattern-structure)
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Sample Output](#sample-output)
@@ -63,7 +62,7 @@ BlogFollower (Concrete Observer)
 
 ---
 
-## Installation
+## Usage
 ```bash
 
 
@@ -72,7 +71,6 @@ javac *.java
 
 ---
 
-## Usage
 
 ```bash
 # Run the application
