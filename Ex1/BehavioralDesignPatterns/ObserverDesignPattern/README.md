@@ -37,9 +37,9 @@ This project simulates a blogging system:
 ```
 
 BlogPublisher (Subject Interface)
-├── registerFollower()
-├── unregisterFollower()
-└── notifyFollowers()
+├── registerFollower(Follower follower)
+├── unregisterFollower(Follower follower)
+└── notifyFollowers(Follower follower)
 
 Follower (Observer Interface)
 └── update(blogPost)
