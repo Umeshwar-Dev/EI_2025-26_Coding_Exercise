@@ -3,8 +3,8 @@ import java.util.Map;
 import java.util.function.Function;
 
 /**
- * Factory for creating command objects
- * Follows Factory Pattern and Open/Closed Principle
+ * creates command objects
+ * Note: This does not follow Factory Pattern and Open/Closed Principle
  */
 public class CommandFactory {
     private static final Map<String, Function<String[], Command>> commandMap = new HashMap<>();
