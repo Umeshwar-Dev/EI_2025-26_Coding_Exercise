@@ -1,0 +1,3 @@
+interface Packaging {
+    String packType();
+}
