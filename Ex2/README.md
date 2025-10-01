@@ -82,7 +82,7 @@ cd Ex2
 cd VirtualClassroomManager
 
 # Compile all Java sources
-javac *.java commands\*.java models\*.java validation\*.java exceptions\*.java
+javac -d . *.java commands/*.java exceptions/*.java validation/*.java models/*java
 
 ```
 
